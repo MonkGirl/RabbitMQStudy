@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--status: 指定log4j本身的打印日志级别，ALL<TRACE<DEBUG<INFO<WARN<ERROR<FATAL<OFF
+    monitorInterval：用于指定log4j自动重新配置的监测间隔时间，单位是秒，最小5秒-->
+<Configuration status="WARN">
+    <Properties>
+        <!--配置日志文件输出目录-->
+        <Property name="LOG_HOME"></Property>
+        <Property name="ERROR_LOG_FILE_NAME"></Property>
+        <Property name="WARN_LOG_FILE_NAME"></Property>
+
+        <Property name="PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t-%L] %-5level %logger{36} -%msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <!--控制台配置-->
+        <Console name="Console" target="SYSTEM_OUT">
+            <!--控制台只输出level及以上级别的信息（onMatch）,其他的直接拒绝（onMismatch）-->
+            <ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY"/>
+            <!--输出日志的格式-->
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Logger name=""></Logger>
+        
+        <Root>
+            <AppenderRef ref=""></AppenderRef>
+        </Root>
+    </Loggers>
+</Configuration>

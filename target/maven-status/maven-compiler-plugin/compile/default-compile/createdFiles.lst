@@ -1,0 +1,17 @@
+com\monkgirl\rabbit\routing\RoutingSendDirect.class
+com\monkgirl\rabbit\routing\ReceiveLogsDirect1.class
+com\monkgirl\rabbit\publish\ReceiveLogs1.class
+com\monkgirl\rabbit\helloworld\Customer$1.class
+com\monkgirl\rabbit\publish\ReceiveLogs2.class
+com\monkgirl\rabbit\publish\EmitLog.class
+com\monkgirl\rabbit\queues\Worker2.class
+com\monkgirl\rabbit\rpc\RPCClient.class
+com\monkgirl\rabbit\routing\ReceiveLogsDirect2.class
+com\monkgirl\rabbit\topic\TopicSend.class
+com\monkgirl\rabbit\rpc\RPCServer.class
+com\monkgirl\rabbit\helloworld\Provider.class
+com\monkgirl\rabbit\helloworld\Customer.class
+com\monkgirl\rabbit\topic\ReceiveLogsTopic2.class
+com\monkgirl\rabbit\queues\Worker1.class
+com\monkgirl\rabbit\topic\ReceiveLogsTopic1.class
+com\monkgirl\rabbit\queues\NewTask.class
